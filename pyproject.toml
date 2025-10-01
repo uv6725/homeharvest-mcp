@@ -1,8 +1,15 @@
+[project]
+# PEP 621 field — Smithery can parse this directly
+requires-python = ">=3.10,<3.13"
+
 [tool.poetry]
 name = "homeharvest"
 version = "0.6.2"
 description = "Real estate scraping library"
-authors = ["Zachary Hampton <zachary@bunsly.com>", "Cullen Watson <cullen@bunsly.com>"]
+authors = [
+    "Zachary Hampton <zachary@bunsly.com>",
+    "Cullen Watson <cullen@bunsly.com>"
+]
 homepage = "https://github.com/ZacharyHampton/HomeHarvest"
 readme = "README.md"
 
@@ -10,12 +17,14 @@ readme = "README.md"
 homeharvest = "homeharvest.cli:main"
 
 [tool.poetry.dependencies]
+python = ">=3.10,<3.13"
 requests = "^2.32.4"
 pandas = "^2.3.1"
 pydantic = "^2.11.7"
 tenacity = "^9.1.2"
-python = ">=3.10,<3.13"
 mcp = { version = ">=1.6.0", extras = ["cli"] }
+# If you did not include the local `homeharvest/` folder, also add:
+# homeharvest = "^0.6.2"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.2"
