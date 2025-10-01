@@ -1,12 +1,13 @@
-# smithery.yaml
-# Docs: smithery runtime must be "python" | "typescript" | "container"
+# smithery.yaml  (put at the repo root)
 name: homeharvest-mcp
 version: 0.1.0
-runtime: "container"
 
-build:
-  dockerfile: "Dockerfile"
-  dockerBuildPath: "."
+# ✅ Use the Python runtime (supported values: "python" | "typescript" | "container")
+runtime: "python"
 
-startCommand:
-  type: "stdio"
+# Tell Smithery to build/install using uv under the hood
+python:
+  packageManager: "uv"
+
+# Entry point for your MCP server (stdio)
+entry: "src/homeharvest_mcp/server.py"
