@@ -1,11 +1,13 @@
 # smithery.yaml
-# Minimal config telling Smithery how to run your MCP server
+# Docs: smithery runtime must be "python" | "typescript" | "container"
 name: homeharvest-mcp
 version: 0.1.0
-runtime: uv
-entry: src/homeharvest_mcp/server.py
 
-# Optional metadata (purely informational)
-description: "MCP server exposing HomeHarvest Realtor.com scraping tools"
-author: "Your Name"
-license: MIT
+runtime: "python"
+
+# Python runtime options
+python:
+  packageManager: "uv"     # tells Smithery to use uv behind the scenes
+
+# Your MCP server entrypoint (stdio server)
+entry: "src/homeharvest_mcp/server.py"
