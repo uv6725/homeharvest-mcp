@@ -1,0 +1,11 @@
+# smithery.yaml
+# Minimal config telling Smithery how to run your MCP server
+name: homeharvest-mcp
+version: 0.1.0
+runtime: uv
+entry: src/homeharvest_mcp/server.py
+
+# Optional metadata (purely informational)
+description: "MCP server exposing HomeHarvest Realtor.com scraping tools"
+author: "Your Name"
+license: MIT
