@@ -1,5 +1,7 @@
 <img src="https://github.com/ZacharyHampton/HomeHarvest/assets/78247585/d1a2bf8b-09f5-4c57-b33a-0ada8a34f12d" width="400">
 
+[![smithery badge](https://smithery.ai/badge/@ZacharyHampton/homeharvest-mcp)](https://smithery.ai/server/@ZacharyHampton/homeharvest-mcp)
+
 **HomeHarvest** is a real estate scraping library that extracts and formats data in the style of MLS listings.
 
 - 🚀 [HomeHarvest MCP](https://smithery.ai/server/@ZacharyHampton/homeharvest-mcp) - Easily get property data, in your agent. Try it out now!
@@ -14,6 +16,15 @@
 
 ## Installation
 
+### Installing via Smithery
+
+To install homeharvest-mcp automatically via [Smithery](https://smithery.ai/server/@ZacharyHampton/homeharvest-mcp):
+
+```bash
+npx -y @smithery/cli install @ZacharyHampton/homeharvest-mcp
+```
+
+### Installing Manually
 ```bash
 pip install -U homeharvest
 ```
