@@ -1,15 +1,23 @@
 [project]
-# PEP 621 field — Smithery can parse this directly
+name = "homeharvest"
+version = "0.6.2"
+description = "Real estate scraping library"
 requires-python = ">=3.10,<3.13"
+
+authors = [
+  { name = "Zachary Hampton", email = "zachary@bunsly.com" },
+  { name = "Cullen Watson",  email = "cullen@bunsly.com" }
+]
+
+# If you did NOT commit the local `homeharvest/` source directory,
+# uncomment this dependency so uv/Smithery can install it from PyPI:
+# dependencies = ["homeharvest>=0.6.2"]
 
 [tool.poetry]
 name = "homeharvest"
 version = "0.6.2"
 description = "Real estate scraping library"
-authors = [
-    "Zachary Hampton <zachary@bunsly.com>",
-    "Cullen Watson <cullen@bunsly.com>"
-]
+authors = ["Zachary Hampton <zachary@bunsly.com>", "Cullen Watson <cullen@bunsly.com>"]
 homepage = "https://github.com/ZacharyHampton/HomeHarvest"
 readme = "README.md"
 
@@ -23,7 +31,7 @@ pandas = "^2.3.1"
 pydantic = "^2.11.7"
 tenacity = "^9.1.2"
 mcp = { version = ">=1.6.0", extras = ["cli"] }
-# If you did not include the local `homeharvest/` folder, also add:
+# If you did NOT commit the local `homeharvest/` folder, also add:
 # homeharvest = "^0.6.2"
 
 [tool.poetry.group.dev.dependencies]
